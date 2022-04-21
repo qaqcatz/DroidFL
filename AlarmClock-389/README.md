@@ -10,7 +10,7 @@ fix version: [https://github.com/yuriykulikov/AlarmClock/tree/d9569acce5fac896b9
 
 ## 编译
 
-应用崩溃后会立即打开gmail发送邮件, 导致我们的插桩插件不好自动捕捉崩溃, 因此使用MyCrash389手动捕捉崩溃.
+应用崩溃后会立即打开gmail发送邮件, 导致我们的插桩插件不好自动捕捉崩溃, 因此推荐手动捕捉崩溃.
 
 ## 复现
 

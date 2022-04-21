@@ -16,7 +16,7 @@ in.championswimmer:SimpleFingerGestures_Android_Library:1.2 ->
 
 in.championswimmer:SimpleFingerGestures_Android_Library:1.1
 
-需要使用MyCrash67手动捕捉崩溃.
+推荐在崩溃时手动捕捉异常.
 
 注意用0.0.1版插桩插件, 兼容android gradle 2~3
 

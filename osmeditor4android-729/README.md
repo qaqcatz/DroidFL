@@ -14,7 +14,7 @@ fix version: [https://github.com/MarcusWolschon/osmeditor4android/tree/d1e325c8d
 markdown-gradle-plugin:1.3.0->1.1.0
 ch.poole:preset-utils:0.1.2->0.23.1
 ```
-app会自动捕捉崩溃重启, 需要用MyCrash729手动捕捉崩溃
+app会自动捕捉崩溃重启, 推荐在崩溃时手动捕捉异常
 ## 复现
 
 复现视频: 目录下的re729

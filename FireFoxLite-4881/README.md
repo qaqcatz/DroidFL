@@ -14,7 +14,7 @@ fix version: [https://github.com/proevan/Rocket/tree/dbf8fcac2ba4b1dcd97a0aea7a2
 
 permissionhandler去github拉取对应版本复制到项目相应位置
 
-项目崩溃会自动重启, 需要用MyCrash4881手动捕获异常
+项目崩溃会自动重启, 推荐在崩溃时手动捕获异常
 
 ## 复现
 
