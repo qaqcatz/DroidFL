@@ -120,16 +120,3 @@ root cause分类: Resource Not Found Error,
 org.odk.collect.android.activities.FormChooserList
 173 // 7
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|114|114|
-|two|82|82|
-
-简单分析: 标记语句都只与最后一个动作有关, 而最后一个动作的覆盖范围较大, 不易定位. 
-

@@ -124,16 +124,3 @@ root cause分类: Indexing Error
 de.k3b.android.toGoZip.ZipStorageDocumentFile
 157 // 8
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|1|8|
-|two|10|13|
-
-简单分析: 错误语句只和最后一个动作相关. 最后一个动作覆盖范围很小, 效果不错
-

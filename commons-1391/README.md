@@ -125,16 +125,3 @@ fr.free.nrw.commons.nearby.NearbyMapFragment
 408 // 5,10
 582 // 10
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|32|107,32|
-|two|22|1111,22|
-
-简单分析:`fr.free.nrw.commons.nearby.NearbyMapFragment:582`和最后一步相关, 最后一步覆盖范围较小, 定位效果较好. 不点击center时`fr.free.nrw.commons.nearby.NearbyMapFragment:408`不会执行, 可以体现动作5的差异, 因此art在这一句上的效果相对two好, 不过没有用例同时体现动作5和10的差异, 导致这句的实际定位效果不好.
-

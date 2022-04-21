@@ -125,16 +125,3 @@ com.owncloud.android.ui.activity.ToolbarActivity
 com.owncloud.android.ui.activity.FileDisplayActivity
 234 // 0, 11
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|2022,2023|2023,2269|
-|two|2022,2023|2023,2269|
-
-简单分析: 错误语句被初始动作覆盖, 效果会很差.
-

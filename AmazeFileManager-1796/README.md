@@ -151,16 +151,3 @@ root cause分类: API Usage Error
 com.amaze.filemanager.asynchronous.asynctasks.MoveFiles
 127 // 4
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|17|17|
-|two|568|568|
-
-简单分析: 只有路径错误导致rename失败时才会调用false分支, 只要用例中有合法路径就能体现差异, 因此art效果不错(而two只有非法路径, 效果不好)
-

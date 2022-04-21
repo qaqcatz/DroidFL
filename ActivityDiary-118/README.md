@@ -127,15 +127,3 @@ root cause分类: Indexing Error
 de.rampro.activitydiary.ui.history.HistoryRecyclerViewAdapter
 88 // 8
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|19|19|
-|two|2|2|
-
-简单分析: 异常被最后一步覆盖, 最后一步涉及的代码较少, 因此two的效果较好. 而art内包含two, 通过two体现差异信息, 因此art的效果也较好.

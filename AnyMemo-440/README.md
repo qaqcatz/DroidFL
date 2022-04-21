@@ -131,16 +131,3 @@ root cause分类: Resource Not Found
 org.liberty.android.fantastischmemo.ui.QuizActivity
 171 // 5
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|34|34|
-|two|39|39|
-
-简单分析: 崩溃语句只和最后一个动作相关. 最后一个动作覆盖范围较小, 定位效果也还可以.
-

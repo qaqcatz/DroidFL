@@ -149,16 +149,3 @@ root cause分类: Component Lifecycle Error
 net.gsantner.opoc.ui.FilesystemDialog
 127 // 3,4
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|958|958|
-|two|958|958|
-
-简单分析: 错误语句被动作3覆盖, 动作3的覆盖范围很大, 不好体现差异性.
-

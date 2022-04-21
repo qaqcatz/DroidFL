@@ -106,16 +106,3 @@ root cause分类: Framework Constraint Error
 de.blau.android.propertyeditor.PresetFragment
 257 // 10
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|5|5|
-|two|6|6|
-
-简单分析:错误语句只和最后一个动作相关. 最后一个动作覆盖范围很小, 效果不错.
-

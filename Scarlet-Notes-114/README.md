@@ -116,16 +116,3 @@ root cause分类: Resource Not Found
 com.maubis.scarlet.base.MainActivity
 210 // 6
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|1|15|
-|two|2|102|
-
-简单分析: 崩溃语句只和最后一个动作相关. 最后一个动作覆盖范围很小, 效果不错. 但是root cause中对LOCKED的设置语句和动作6有关, two体现不出这个差异, 而art中的passed用例可以, 因此art的效果比two好.
-

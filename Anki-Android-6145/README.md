@@ -161,16 +161,3 @@ root cause分类: Resource Not Found Error
 com.ichi2.libanki.StdModels
 65 // 0, 19
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|18|2223|
-|two|97|1969|
-
-简单分析: 对于`com.ichi2.libanki.AnkiPackageExporter:447`, 这条语句只和最后一步有关, 而最后一步覆盖代码较多, 直接影响到two的效果. 而art中不开启v2进行export的用例能做到更精确的区分, 效果会好一些.  `com.ichi2.libanki.StdModels:65`在app初始加载的时候就被覆盖, 效果不会好.
-

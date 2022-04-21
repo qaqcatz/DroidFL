@@ -103,15 +103,3 @@ root cause分类: Component Lifecycle Error
 org.dmfs.tasks.QuickAddDialogFragment
 512 // 5(实际上是动作4,后面会有分析)
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|175|2|
-|two|109|117|
-
-简单分析:fix语句和动作2有关, 测试用例对动作2都没有差异性, 效果不好. root cause语句比较特殊, 其实这条语句是被动作4覆盖的, 只不过动作5在动作4后立即执行, 使得插桩程序来不及处理. two体现不出动作4的差异, 因此效果不好. 而art中存在一个将click SAVE AND CONTINUE换成click SAVE的用例, 可以体现差异性, 因此效果不错. 

@@ -102,16 +102,3 @@ root cause分类: API Usage Error
 com.ichi2.anki.multimediacard.fields.BasicImageFieldController
 122 // 5
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|4|4|
-|two|4|4|
-
-简单分析: 错误只和最后一步有关, 最后一步覆盖范围很小, 效果不错.
-

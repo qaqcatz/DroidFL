@@ -111,16 +111,3 @@ root cause分类: Resource Not Found
 de.danoeh.antennapod.fragment.OnlineSearchFragment
 93 // 2
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|36|36|
-|two|24|24|
-
-简单分析:错误语句只和最后一步动作有关. 虽然最后一步动作范围较大, 但可能错误语句的并列排名靠前, 看上去效果还可以.
-

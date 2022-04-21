@@ -127,16 +127,3 @@ root cause分类: API Usage Error
 de.k3b.android.ToGoZip.SettingsImpl
 264 // 0,7
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|143|143|
-|two|134|134|
-
-简单分析: 错误语句被初始动作覆盖, 效果不会好.
-

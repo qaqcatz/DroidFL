@@ -143,16 +143,3 @@ root cause分类: Resource Not Found Error
 net.bible.service.sword.SwordDocumentFacade
 203 // 9
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|1|14|
-|two|2|4070|
-
-简单分析: 测试用例可以体现第9步以及最后一步的差异性, 而且这两步涉及的代码较少, 因此效果会好一些. two无法体现9的差异, 效果很差
-

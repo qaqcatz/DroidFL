@@ -134,16 +134,3 @@ root cause分类: Component Lifecycle Error
 de.k3b.android.androFotoFinder.imagedetail.ImageDetailActivityViewPager
 699 // 4,6
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|1420|88|
-|two|1289|758|
-
-简单分析: root cause语句在两次旋转都会被调用, 此时two就体现不出差异了, 而art中对旋转动作的取消能较好地体现root cause的差异. fix语句被重命名操作和最后一个操作覆盖, art中没有用例能同时体现这两个动作的差异, 因此效果很差.
-

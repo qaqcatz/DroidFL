@@ -216,17 +216,3 @@ com.amaze.filemanager.adapters.glide.RecyclerPreloadModelProvider
 com.amaze.filemanager.adapters.RecyclerAdapter
 341 // 3
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|600|600, 4|
-|two|597|597, 396|
-
-简单分析: 正如上面所说的, 搜索正常时会在onPostExecute前再调用一次RecycleView的getPreloadItems, 导致`com.amaze.filemanager.adapters.glide.RecyclerPreloadModelProvider:36`在正确用例和错误用例间没有差异, 因此定位效果不好. 
-
-我们的正确用例只涉及一个文件的搜索, 不会调用关键函数1的else分支, 与错误用例间有显著差异, 因此`com.amaze.filemanager.adapters.RecyclerAdapter:341`的定位效果不错.

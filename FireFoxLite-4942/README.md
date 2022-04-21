@@ -112,16 +112,3 @@ root cause分类: API Usage Error
 org.mozilla.focus.tabs.tabtray.TabTrayFragment
 195 // 1
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|58|58|
-|two|58|58|
-
-简单分析: 错误只和最后一步有关, 最后一步覆盖范围较大, 效果一般
-

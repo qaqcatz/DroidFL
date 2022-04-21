@@ -102,16 +102,3 @@ root cause分类: Resource Not Found
 de.danoeh.antennapod.fragment.QueueFragment
 521 // 0
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|2|463|
-|two|2|455|
-
-简单分析: fix只和最后一步有关, 最后一步覆盖范围小, 效果较好. 而root cause和app初始化有关, 效果不会好.
-

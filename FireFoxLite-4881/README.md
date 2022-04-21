@@ -122,16 +122,3 @@ root cause分类: Resource Not Found
 org.mozilla.rocket.shopping.search.ui.ShoppingSearchResultTabFragment
 183 // 9
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|2|2|
-|two|2|2|
-
-简单分析: root cause和fix都只和最后一步有关, 最后一步覆盖范围很小, 定位效果会很好. 
-

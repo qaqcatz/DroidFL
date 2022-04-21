@@ -126,15 +126,3 @@ root cause分类: 其他
 com.owncloud.android.ui.preview.PreviewImageFragment
 432 // 3
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|1|1|
-|two|18|18|
-
-简单分析: 错误语句只和最后一个动作相关. 最后一个动作覆盖范围很小, 效果不错.

@@ -133,16 +133,3 @@ root cause分类: Resource Not Found
 com.owncloud.android.ui.activity.FolderPickerActivity
 345 // 7
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|4156|4156|
-|two|4151|4151|
-
-简单分析: 所有用例中动作7不具备差异性
-

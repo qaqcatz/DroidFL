@@ -200,15 +200,3 @@ root cause分类: Resource Not Found Error
 com.ichi2.libanki.Collection
 288 // 0
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|113|1988|
-|two|113|1978|
-
-简单分析:`com.ichi2.libanki.Collection:288`只在app初始化时执行, 效果一定不好.  art用例对于`com.ichi2.anki.AbstractFlashcardViewer:1777`没有区分性, 且最后一步覆盖范围大, two也定位不准, 导致这句效果不好.

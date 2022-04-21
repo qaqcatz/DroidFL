@@ -115,16 +115,3 @@ root cause分类: API Usage Error
 fr.free.nrw.commons.location.LocationServiceManager
 107 // 3
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|15|1|
-|two|7|8|
-
-简单分析:root cause和fix都只和最后一步有关, 最后一步覆盖范围很小, 定位效果会很好. 
-

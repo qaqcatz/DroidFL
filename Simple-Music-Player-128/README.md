@@ -183,15 +183,3 @@ root cause分类: Indexing Error
 com.simplemobiletools.musicplayer.activities.MainActivity
 561 // 0 5 7 10 13 14
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|305|193|
-|two|305|193|
-
-简单分析: fix语句被动作7覆盖, 但用例中体现不出7的差异, 效果不好. root cause错误语句被初始动作覆盖, 且还被5,6,10,13,14动作覆盖, 效果不会好.

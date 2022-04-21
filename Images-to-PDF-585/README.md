@@ -133,16 +133,3 @@ root cause分类: Indexing Error
 swati4star.createpdf.fragment.HomeFragment
 107 // 0
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|183|183|
-|two|165|165|
-
-简单分析:错误语句被初始动作覆盖, 效果不会好.
-

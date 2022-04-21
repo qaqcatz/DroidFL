@@ -104,16 +104,3 @@ root cause分类: Resource Not Found Error
 fr.free.nrw.commons.media.MediaDetailPagerFragment
 401 // 1
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|30|30|
-|two|26|26|
-
-简单分析: 虽然最后一步覆盖较大, 但效果仍然不错, 可能是在并列排名中可疑语句恰好比较靠前
-

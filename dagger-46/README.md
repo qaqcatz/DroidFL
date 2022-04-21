@@ -110,16 +110,3 @@ root cause分类: API Updates and Compatibility Error
 com.vestrel00.daggerbutterknifemvp.ui.common.view.BaseFragment
 67 // 0,1(a25)
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|40|40|
-|two|-|-|
-
-two没有在a25上执行, 一定覆盖不到错误语句. art中a22和a25两次执行的差异会帮助我们定位错误, 但a25上动作覆盖的范围略大, 对排名造成了一定影响.
-

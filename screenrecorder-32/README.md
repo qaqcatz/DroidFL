@@ -129,16 +129,3 @@ root cause分类: API Usage Error.
 com.orpheusdroid.screenrecorder.adapter.VideoRecyclerAdapter
 132 // 2
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|554|554|
-|two|546|546|
-
-简单分析: 点击edit就会执行错误语句, 用例中不存在有关edit动作的差异, 故效果不好.
-

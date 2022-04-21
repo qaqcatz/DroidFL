@@ -127,15 +127,3 @@ root cause分类: Framework Constraint Error
 com.simplemobiletools.musicplayer.adapters.PlaylistsAdapter
 71 // 10
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|4|4|
-|two|5|5|
-
-简单分析: 语句只和最后一个动作相关. 最后一个动作覆盖范围很小, 效果不错. 

@@ -144,16 +144,3 @@ root cause分类: Resource Not Found
 net.exclaimindustries.geohashdroid.widgets.GraticulePicker
 256 // 2
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|1005|1|
-|two|834|2|
-
-简单分析: fix语句被初始语句覆盖, 效果不会好. root cause语句只被最后一个动作覆盖, 且最后一个动作覆盖范围较小, 效果不错.
-

@@ -131,16 +131,3 @@ root cause分类: API Usage Error
 net.bible.service.sword.index.IndexCreator
 46 // 8
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|1971|91|
-|two|1943|3|
-
-简单分析: fix语句被动作0覆盖, 程序初始化时默认执行, 因此定位效果不会好. 对于root_cause, 应该是`net.bible.service.sword.index.IndexCreator:46`恰好比较靠前, 致使最后一步不做时效果不错. 而art中包含了two, 也具备这种差异性, 只不过一些多余的用例干扰了这种差异.
-

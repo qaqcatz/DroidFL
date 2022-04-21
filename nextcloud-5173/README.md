@@ -122,16 +122,3 @@ root cause分类: Resource Not Found
 com.owncloud.android.ui.fragment.OCFileListFragment
 796 // 0,1,2,5
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|5494|5494|
-|two|5194|5194|
-
-简单分析: 错误语句被初始动作覆盖, 效果会很差.
-

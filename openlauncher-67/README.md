@@ -113,16 +113,3 @@ root cause分类: API Usage Error
 com.benny.openlauncher.util.LauncherAction
 114 // 7
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|26|26|
-|two|23|23|
-
-简单分析: 崩溃语句只和最后一个动作相关. 最后一个动作覆盖范围很小, two的效果会不错. art包含two, 效果也不错.
-

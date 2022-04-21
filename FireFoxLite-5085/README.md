@@ -107,16 +107,3 @@ root cause分类: Component Lifecycle Error.
 org.mozilla.focus.settings.SettingsFragment
 53 // 2, 4
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|1119|1119|
-|two|1119|1119|
-
-简单分析:错误语句被动作2, 4覆盖, 而4触发的先决条件就是2, 导致正确错误用例之间没有差异性.
-

@@ -108,16 +108,3 @@ root cause分类: API Usage Error
 com.ichi2.libanki.Utils
 258 // 3
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|31|31|
-|two|3|3|
-
-简单分析: fix和root cause都在最后一步, 且最后一步涉及的代码较少, 因此two的定位效果很好, art包含two也能体现这种差异信息, 效果也不错.
-

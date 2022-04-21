@@ -143,16 +143,3 @@ root cause分类: Component Lifecycle Error
 de.tap.easy_xkcd.database.DatabaseManager
 135 // 5
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|22|117|
-|two|569|265|
-
-简单分析:错误和取消收藏操作有关, two体现不出这种差异效果比较差, 而art中有不进行收藏的用例, 可以体现这种差异. 至于art的root cause为什么效果不好目前还没法做深入分析, 可能是在并列排名中过于靠后.
-

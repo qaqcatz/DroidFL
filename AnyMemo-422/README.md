@@ -128,16 +128,3 @@ root cause分类: Component Lifecycle Error
 org.liberty.android.fantastischmemo.ui.GradeButtonsFragment
 118 // 1,2
 ```
-## Ochi排名
-
-art: 自动+手动生成相似用例
-
-two: 错误用例+去除最后一步的正确用例
-
-|用例/标记|fix|root cause|
-|:----|:----|:----|
-|art|1106|1106|
-|two|1106|1106|
-
-简单分析: 动作1,2都会覆盖错误语句, 没有差异性, 效果不好.
-
