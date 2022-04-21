@@ -1,0 +1,15 @@
+java.lang.RuntimeException: An error occurred while executing doInBackground()
+	at android.os.AsyncTask$3.done(AsyncTask.java:325)
+	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+	at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:243)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+	at java.lang.Thread.run(Thread.java:761)
+Caused by: java.lang.NullPointerException: Attempt to get length of null array
+	at de.tap.easy_xkcd.fragments.comics.FavoritesFragment$updateFavorites.doInBackground(FavoritesFragment.java:117)
+	at de.tap.easy_xkcd.fragments.comics.FavoritesFragment$updateFavorites.doInBackground(FavoritesFragment.java:113)
+	at android.os.AsyncTask$2.call(AsyncTask.java:305)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+	... 4 more

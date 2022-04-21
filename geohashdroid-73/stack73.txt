@@ -1,0 +1,16 @@
+java.lang.RuntimeException: An error occurred while executing doInBackground()
+	at android.os.AsyncTask$3.done(AsyncTask.java:325)
+	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+	at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+	at java.lang.Thread.run(Thread.java:761)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String net.exclaimindustries.geohashdroid.util.Graticule.getLatitudeString(boolean)' on a null object reference
+	at net.exclaimindustries.geohashdroid.util.HashBuilder$StockRunner.runStock(HashBuilder.java:148)
+	at net.exclaimindustries.geohashdroid.services.StockService.onHandleWork(StockService.java:305)
+	at androidx.core.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:392)
+	at androidx.core.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:383)
+	at android.os.AsyncTask$2.call(AsyncTask.java:305)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+	... 3 more

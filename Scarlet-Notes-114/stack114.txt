@@ -1,0 +1,10 @@
+java.lang.Exception: Invalid Search Mode
+        at com.maubis.scarlet.base.support.SearchConfigKt.getNotesForMode(SearchConfig.kt:121)
+        at com.maubis.scarlet.base.support.SearchConfigKt.filterSearchWithoutFolder(SearchConfig.kt:68)
+        at com.maubis.scarlet.base.support.SearchConfigKt.unifiedSearchSynchronous(SearchConfig.kt:57)
+        at com.maubis.scarlet.base.MainActivity$unifiedSearchSynchronous$$inlined$map$lambda$1.invokeSuspend(MainActivity.kt:273)
+        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:32)
+        at kotlinx.coroutines.DispatchedTask.run(Dispatched.kt:233)
+        at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:594)
+        at kotlinx.coroutines.scheduling.CoroutineScheduler.access$runSafely(CoroutineScheduler.kt:60)
+        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:742)

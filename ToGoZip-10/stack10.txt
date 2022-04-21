@@ -1,0 +1,22 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{de.k3b.android.toGoZip/de.k3b.android.toGoZip.SettingsActivity}: java.lang.NumberFormatException: For input string: ""
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2665)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+	at android.app.ActivityThread.handleRelaunchActivity(ActivityThread.java:4519)
+	at android.app.ActivityThread.-wrap19(ActivityThread.java)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1483)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:154)
+	at android.app.ActivityThread.main(ActivityThread.java:6119)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+Caused by: java.lang.NumberFormatException: For input string: ""
+	at java.lang.Integer.parseInt(Integer.java:533)
+	at java.lang.Integer.parseInt(Integer.java:556)
+	at de.k3b.android.toGoZip.SettingsImpl.getPrefValue(SettingsImpl.java:264)
+	at de.k3b.android.toGoZip.SettingsImpl.init(SettingsImpl.java:95)
+	at de.k3b.android.toGoZip.SettingsActivity.onCreate(SettingsActivity.java:87)
+	at android.app.Activity.performCreate(Activity.java:6679)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+	... 10 more

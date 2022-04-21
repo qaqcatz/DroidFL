@@ -1,0 +1,21 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.nextcloud.android.qa/com.owncloud.android.ui.activity.FileDisplayActivity}: java.lang.IllegalStateException: This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_SUPPORT_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2665)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:154)
+	at android.app.ActivityThread.main(ActivityThread.java:6119)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+Caused by: java.lang.IllegalStateException: This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_SUPPORT_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.
+	at androidx.appcompat.app.AppCompatDelegateImpl.setSupportActionBar(AppCompatDelegateImpl.java:345)
+	at androidx.appcompat.app.AppCompatActivity.setSupportActionBar(AppCompatActivity.java:130)
+	at com.owncloud.android.ui.activity.ToolbarActivity.setupToolbar(ToolbarActivity.java:69)
+	at com.owncloud.android.ui.activity.ToolbarActivity.setupToolbar(ToolbarActivity.java:99)
+	at com.owncloud.android.ui.activity.FileDisplayActivity.onCreate(FileDisplayActivity.java:256)
+	at android.app.Activity.performCreate(Activity.java:6679)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+	... 9 more

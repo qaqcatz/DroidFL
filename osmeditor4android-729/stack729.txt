@@ -1,0 +1,23 @@
+ACRA caught a RuntimeException for de.blau.android
+java.lang.RuntimeException: An error occurred while executing doInBackground()
+     at android.os.AsyncTask$3.done(AsyncTask.java:325)
+     at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+     at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+     at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:243)
+     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+     at java.lang.Thread.run(Thread.java:761)
+Caused by: android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.
+     at android.view.ViewRootImpl.checkThread(ViewRootImpl.java:6891)
+     at android.view.ViewRootImpl.invalidateChildInParent(ViewRootImpl.java:1083)
+     at android.view.ViewGroup.invalidateChild(ViewGroup.java:5205)
+     at android.view.View.invalidateInternal(View.java:13656)
+     at android.view.View.invalidate(View.java:13620)
+     at android.view.View.setEnabled(View.java:8103)
+     at android.widget.TextView.setEnabled(TextView.java:1609)
+     at de.blau.android.propertyeditor.PresetFragment$3.doInBackground(PresetFragment.java:257)
+     at de.blau.android.propertyeditor.PresetFragment$3.doInBackground(PresetFragment.java:243)
+     at android.os.AsyncTask$2.call(AsyncTask.java:305)
+     at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+     ... 4 more
